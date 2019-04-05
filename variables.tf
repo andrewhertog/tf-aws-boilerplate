@@ -10,6 +10,18 @@ variable "vpc_cidr_block" {
 
 variable "vpc_name" {
     description = "Label to name VPC"
-  
 }
+
+variable "num_public_subnets" {
+    description = "Number of public subnets"
+    default = 2
+}
+
+variable "num_private_subnets" {
+    description = "Number of private subnets"
+    default = 2
+}
+
+
+
 
